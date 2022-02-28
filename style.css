@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Explora&family=Lato:ital@1&family=Open+Sans&family=Open+Sans+Condensed:ital,wght@1,300&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --font-primary: "Explora", serif;
+    --font-secundary: "Lato", serif;
+    --font-action: "Open Sans", serif;
+}
+
+.hamburguer{
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.show-menu .hamburguer{
+    right: 15rem;
+}
+
+.line{
+    width: 100%;
+    height: .1rem;
+    background-color: #fff;
+    box-shadow: 0.1rem 0.1rem 1px #000;
+}
+
+.show-menu #line1{
+    transform: rotate(45deg) translate(.3rem, .45rem);
+}
+
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-menu #line3{
+    transform: rotate(-45deg) translate(.1rem, -.45rem);
+}
+
+.hamburguer span{
+    position: absolute;
+    left: 3rem;
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f4037;
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+    background: linear-gradient(to right, #99f2c8, #1f4037);
+    font-family: var(--font-action);
+    opacity: 0;
+}
+
+.hamburguer span::before{
+    content: "";
+    position: absolute;
+    border-right: .5rem solid #99f2c8;
+    border-top: .5rem solid transparent;
+    border-left: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
+    left: -1rem;
+}
+
+.show-menu .hamburguer:hover span{
+    transition: 0.7s;
+    opacity: 0.8;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    animation: zoom 25s;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.banner{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.banner h1{
+    color: white;
+    font-size: 3em;
+    font-family: "Lato", serif;
+    font-weight: 200;
+    text-shadow: .1rem .2rem 6px rgba(0, 0, 0, 0.8);
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: moveBanner 1s 0.5s forwards;
+}
+
+.banner p{
+    font-family: "Yaldevi";
+    color: #A740DE;
+    font-size: 1rem;
+    text-shadow: .1rem .2rem 6px rgba(0, 0, 0, 0.8);
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: moveBanner 1s 0.7s forwards;
+}
+
+.banner button{
+    font-family: "Lato", serif;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    background: #1f4037;
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+    background: linear-gradient(to right, #99f2c8, #1f4037);
+
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    animation: moveBanner 1s 0.9s forwards;
+}
+
+@keyframes moveBanner {
+    0%{
+        transform: translateY(10rem) rotateY(-30deg);
+    }
+    100%{
+        transform: translateY(0) rotateY(0); 
+        opacity: 1;
+    }
+}
+
+.banner button:hover{
+    color: black;
+}
+
+.sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all 0.4s;
+}
+
+.show-menu .sidebar{
+    right: 0;
+}
+
+.menu{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item{
+    text-align: center;
+}
+
+.menu-link{
+    height: 2.5rem;
+    width: 2.5rem;
+    font-family: var(--font-action);
+    font-size: 1.4rem;
+    color: #000;
+    transition: color 0.4s;
+}
+
+.menu-link:hover{
+    border-radius: 7px;
+    color: whitesmoke;
+    background-color: #1f4037;
+}
+
+.social-media{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media i{
+    color: #000;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 7px;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.4s;
+}
+
+.social-media i:hover{
+    color: whitesmoke;
+    background-color: #1f4037;
+}
+
+.Quem-Somos{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Quem-Somos2{
+    position: absolute;
+    top: 132%;
+    left: 20%;
+    width: 50rem;
+    font-family: var(--font-action);
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.img-Quem-circuito{
+    height: 4%;
+}
+
+/*--------------------FORMATAÇÃO SERVIÇOS--------------*/
+
+
+.servicos{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background: #1f4037;
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+}
+
+.card-img{
+    background-color: aqua;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+/*--------------------EFEITO SLIDE SERVIÇOS--------------*/
+
+
+
+
+/*--------------------------FIM SLIDE SERVIÇOS-------------------------*/
