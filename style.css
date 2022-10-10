@@ -2,7 +2,9 @@
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 *{
     margin: 0;
@@ -16,6 +18,10 @@
     --font-secundary: "Lato", serif;
     --font-action: "Open Sans", serif;
 }
+
+/* ---------------- Templates ---------------*/
+
+/* hamburger */
 
 .hamburguer{
     width: 2rem;
@@ -84,6 +90,8 @@
     opacity: 0.8;
 }
 
+/* hamburger fim*/
+
 header{
     width: 100%;
     height: 100vh;
@@ -114,18 +122,21 @@ header{
     }
 }
 
+/* Titulo Banner */
+
 .banner{
     position: absolute;
-    top: 20%;
-    left: 10%;
+    top: 45%;
+    left: 35%;
 }
 
 .banner h1{
-    color: white;
-    font-size: 3em;
-    font-family: "Lato", serif;
+    color: #00FFFF;
+    font-size: 13em;
+    letter-spacing: 30px;
+    font-family: "Bebas Neue", serif;
     font-weight: 200;
-    text-shadow: .1rem .2rem 6px rgba(0, 0, 0, 0.8);
+    text-shadow: .1rem .2rem 6px rgba(79, 179, 59, 0.8);
     line-height: 3.5rem;
     margin-bottom: 2rem;
     opacity: 0;
@@ -133,10 +144,11 @@ header{
 }
 
 .banner p{
-    font-family: "Yaldevi";
-    color: #A740DE;
-    font-size: 1rem;
-    text-shadow: .1rem .2rem 6px rgba(0, 0, 0, 0.8);
+    font-family: "Open Sans";
+    color: #00FFFF;
+    font-size: 4rem;
+    letter-spacing: 15px;
+    text-shadow: .1rem .2rem 6px rgba(79, 179, 59, 0.8);
     margin-bottom: 2rem;
     opacity: 0;
     animation: moveBanner 1s 0.7s forwards;
@@ -177,7 +189,7 @@ header{
 .sidebar{
     width: 20rem;
     height: 100vh;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     top: 0;
     right: -20rem;
@@ -239,24 +251,44 @@ header{
     background-color: #1f4037;
 }
 
+/*--------------------FORMATAÇÃO QUEM SOMOS--------------*/
+
 .Quem-Somos{
     width: 100%;
     height: 100vh;
-    overflow: hidden;
 }
 
-.Quem-Somos2{
-    position: absolute;
-    top: 132%;
-    left: 20%;
-    width: 50rem;
+.qs{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.title{
+    font-size: 1.4em;
+    font-family: "Open Sans", serif;
+    line-height: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.Quem-Somos-Header{
+    background-color: rgb(212, 18, 18);
+    width: 800px;
+    height: 200px;
     font-family: var(--font-action);
-    font-size: 1.1rem;
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 40px;
     color: #000;
 }
 
-.img-Quem-circuito{
-    height: 4%;
+.logomi{
+    height: 500px;
+    width: 500px;
+    background-color: #00FFFF;
 }
 
 /*--------------------FORMATAÇÃO SERVIÇOS--------------*/
