@@ -127,7 +127,8 @@ header{
 .banner{
     position: absolute;
     top: 45%;
-    left: 35%;
+    left: 28%;
+    
 }
 
 .banner h1{
@@ -275,7 +276,7 @@ header{
 }
 
 .Quem-Somos-Header{
-    width: 800px;
+    width: 40vw;
     font-family: var(--font-action);
     font-size: 18px;
     text-align: justify;
@@ -304,6 +305,7 @@ header{
 }
 
 .card{
+    font-family: "Open Sans", serif;
     background: #fff;
     width: 270px;
     height: 400px;
