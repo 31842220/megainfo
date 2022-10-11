@@ -258,14 +258,6 @@ header{
     height: 100vh;
 }
 
-.qs{
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 50px;
-}
-
 .title{
     font-size: 1.4em;
     font-family: "Open Sans", serif;
@@ -273,10 +265,17 @@ header{
     margin-bottom: 2rem;
 }
 
+.qs{
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
 .Quem-Somos-Header{
-    background-color: rgb(212, 18, 18);
     width: 800px;
-    height: 200px;
     font-family: var(--font-action);
     font-size: 18px;
     text-align: justify;
@@ -287,7 +286,6 @@ header{
 .logomi{
     height: 500px;
     width: 500px;
-    background-color: #00FFFF;
 }
 
 /*--------------------FORMATAÇÃO SERVIÇOS--------------*/
