@@ -274,7 +274,6 @@ header{
 }
 
 .Quem-Somos-Header{
-    background-color: rgb(212, 18, 18);
     width: 800px;
     height: 200px;
     font-family: var(--font-action);
@@ -287,7 +286,6 @@ header{
 .logomi{
     height: 500px;
     width: 500px;
-    background-color: #00FFFF;
 }
 
 /*--------------------FORMATAÇÃO SERVIÇOS--------------*/
