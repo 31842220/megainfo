@@ -136,7 +136,7 @@ header{
     width: 100vw;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 28em;
+    padding-top: 20%;
     padding-bottom: 15em;
     text-align: center;
 }
@@ -301,6 +301,11 @@ header{
 
 /*--------------------FORMATAÇÃO SERVIÇOS--------------*/
 
+.cards-servicos{
+    background-color: #000;
+    height: 100vw;
+    width: 100vh;
+}
 
 .servicos{
     justify-content: center;
@@ -317,8 +322,8 @@ header{
 .card{
     font-family: "Open Sans", serif;
     background: #fff;
-    width: 270px;
-    height: 400px;
+    width: 240px;
+    height: 390px;
     margin: 50px;
     border-radius: 15px;
     border: 2px solid #1f4037; 
@@ -371,7 +376,7 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
